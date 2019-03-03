@@ -1,0 +1,25 @@
+/* General Styles
+========================================
+========================================*/
+
+body{
+    color: map-get($colors, primary)
+}
+
+section{
+    margin:20px auto;
+    max-width:800px;
+    &:first-child{
+        margin:50px auto;
+        text-align:center;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+    margin:20px;
+}

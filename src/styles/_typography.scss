@@ -1,0 +1,45 @@
+/* Typography
+========================================
+========================================*/
+
+/* Font Installation
+========================================*/
+// @font-face {
+//     font-family: Your Font Family;
+//     src: url('Your Folder Location');
+// }
+
+/* Font sizes
+========================================*/
+html {
+    @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {  
+    font-size: $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+}
+h2 {  
+    font-size: $mod_1*$mod_1*$mod_1*$mod_1 *1rem; 
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$mod_1 *$min_font, $mod_2*$mod_2*$mod_2*$mod_2 *$min_font);
+}
+h3 { 
+    font-size: $mod_1*$mod_1*$mod_1 *1rem;
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1*$mod_1*$min_font, $mod_2*$mod_2*$mod_2*$min_font);
+}
+
+h4 { 
+    font-size: $mod_1 *$mod_1 *1rem;
+    @include fluid-type($min_width, $max_width, $mod_1*$mod_1 *$min_font, $mod_2*$mod_2 *$min_font);
+}
+
+h5 { 
+    font-size: $mod_1 *1rem;
+    @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
+}
+
+
